@@ -1,0 +1,51 @@
+[debug] [2023-03-01T13:10:09.003Z] ----------------------------------------------------------------------
+[debug] [2023-03-01T13:10:09.005Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-01T13:10:09.006Z] CLI Version:   11.24.0
+[debug] [2023-03-01T13:10:09.006Z] Platform:      win32
+[debug] [2023-03-01T13:10:09.006Z] Node Version:  v18.14.0
+[debug] [2023-03-01T13:10:09.007Z] Time:          Wed Mar 01 2023 18:40:09 GMT+0530 (India Standard Time)
+[debug] [2023-03-01T13:10:09.008Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-01T13:10:09.011Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-03-01T13:10:09.120Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-01T13:10:09.120Z] > authorizing via signed-in user (aditigoyalprg21@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lenovo\Desktop\chatcord
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2023-03-01T13:10:10.230Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-03-01T13:10:10.230Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-03-01T13:10:59.655Z] Using project from CLI flag: discord-clone-akky
+[debug] [2023-03-01T13:10:59.656Z] > refreshing access token with scopes: []
+[debug] [2023-03-01T13:10:59.657Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-03-01T13:10:59.657Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-01T13:11:00.302Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-03-01T13:11:00.302Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-01T13:11:00.315Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/discord-clone-akky [none]
+[debug] [2023-03-01T13:11:01.080Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/discord-clone-akky 403
+[debug] [2023-03-01T13:11:01.081Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/discord-clone-akky {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-03-01T13:11:01.081Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-03-01T13:11:01.533Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project discord-clone-akky. Please make sure the project exists and your account has permission to access it.
